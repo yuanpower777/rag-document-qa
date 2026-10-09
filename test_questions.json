@@ -1,0 +1,154 @@
+{
+  "name": "机器学习课程大作业实验报告 · RAG 测试题集",
+  "source_document": "20220404430824+吴俊源+机器学习课程大作业实验报告.docx",
+  "topic": "基于 UCI Adult 数据集的收入预测模型应用实验",
+  "total": 20,
+  "notes": [
+    "expected_keywords：期望在检索到的 Top-K 片段里出现的关键信息（用于快速判断召回是否命中）。",
+    "answer_points：一个合格回答应包含的要点（用于人工判断答案质量）。",
+    "本题集分四类：A=事实抽取、B=数字提取、C=跨段落归纳、D=兜底/边界测试。",
+    "D 类问题文档中并无答案，用于测试模型是否会老老实实回答『资料中未提及』而不编造。"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "category": "A 事实抽取",
+      "question": "这个实验用的是什么数据集？",
+      "expected_keywords": ["Adult", "Census Income"],
+      "answer_points": "UCI Adult 数据集，也称 Census Income 数据集，包含教育、职业、人口统计学特征。"
+    },
+    {
+      "id": 2,
+      "category": "A 事实抽取",
+      "question": "实验要求使用哪两种机器学习模型？",
+      "expected_keywords": ["随机森林", "神经网络"],
+      "answer_points": "一种传统机器学习模型，一种神经网络模型；本实验选用随机森林和全连接神经网络。"
+    },
+    {
+      "id": 3,
+      "category": "A 事实抽取",
+      "question": "这个实验的预测目标是什么？二分类的判定标准是什么？",
+      "expected_keywords": ["income", "50K"],
+      "answer_points": "预测个人年收入是否超过 5 万美元；income 列为 >50K 属高收入人群，<=50K 属非高收入人群。"
+    },
+    {
+      "id": 4,
+      "category": "A 事实抽取",
+      "question": "实验报告的作者、学号和专业班级分别是什么？",
+      "expected_keywords": ["吴俊源", "20220404430824", "22计科8班"],
+      "answer_points": "吴俊源、20220404430824、22计科8班。"
+    },
+    {
+      "id": 5,
+      "category": "A 事实抽取",
+      "question": "实验代码要求的运行环境和主要模块版本是什么？",
+      "expected_keywords": ["3.12.8", "1.6.1", "2.16.1"],
+      "answer_points": "python=3.12.8、scikit-learn=1.6.1、tensorflow=2.16.1，需在 jupyter notebook 环境下运行。"
+    },
+    {
+      "id": 6,
+      "category": "A 事实抽取",
+      "question": "数据预处理时对缺失值和分类变量是怎么处理的？",
+      "expected_keywords": ["独热编码", "缺失值"],
+      "answer_points": "使用独热编码处理缺失值和分类变量。"
+    },
+    {
+      "id": 7,
+      "category": "A 事实抽取",
+      "question": "训练集和验证集的比例是如何划分的？",
+      "expected_keywords": ["80%", "20%"],
+      "answer_points": "80% 作为训练数据，余下 20% 作为验证数据。"
+    },
+    {
+      "id": 8,
+      "category": "B 数字提取",
+      "question": "随机森林模型的准确率和 F1 分数分别是多少？",
+      "expected_keywords": ["85.43", "65.46"],
+      "answer_points": "准确率 85.43%，F1 分数 65.46%（表格中为 0.8543 和 0.6546）。"
+    },
+    {
+      "id": 9,
+      "category": "B 数字提取",
+      "question": "神经网络模型的准确率和 F1 分数分别是多少？",
+      "expected_keywords": ["83.41", "59.31"],
+      "answer_points": "准确率 83.41%，F1 分数 59.31%（表格中为 0.8341 和 0.5931）。"
+    },
+    {
+      "id": 10,
+      "category": "B 数字提取",
+      "question": "两个模型哪个性能更好？具体差距是多少？",
+      "expected_keywords": ["随机森林", "85.43", "83.41"],
+      "answer_points": "随机森林更优；准确率高 2.02 个百分点（85.43% vs 83.41%），F1 高 6.15 个百分点（65.46% vs 59.31%）。"
+    },
+    {
+      "id": 11,
+      "category": "B 数字提取",
+      "question": "随机森林的混淆矩阵四个数值分别是多少？",
+      "expected_keywords": ["1145", "320", "5927", "551"],
+      "answer_points": "TP=1145、FP=320、TN=5927、FN=551。"
+    },
+    {
+      "id": 12,
+      "category": "B 数字提取",
+      "question": "神经网络的混淆矩阵四个数值分别是多少？",
+      "expected_keywords": ["959", "386", "5861", "737"],
+      "answer_points": "TP=959、FP=386、TN=5861、FN=737。"
+    },
+    {
+      "id": 13,
+      "category": "B 数字提取",
+      "question": "两个模型相比，哪个漏报更少？漏报数量分别是多少？",
+      "expected_keywords": ["551", "737", "FN"],
+      "answer_points": "随机森林漏报更少：FN 为 551，神经网络 FN 为 737，随机森林低 186。"
+    },
+    {
+      "id": 14,
+      "category": "C 跨段归纳",
+      "question": "特征重要性分析中，对收入预测影响最大的五个特征依次是什么？",
+      "expected_keywords": ["capital-gain", "education-num", "age", "hours-per-week", "capital-loss"],
+      "answer_points": "依次为 capital-gain、education-num、age、hours-per-week、capital-loss。"
+    },
+    {
+      "id": 15,
+      "category": "C 跨段归纳",
+      "question": "为什么随机森林在这个任务上比神经网络表现更好？",
+      "expected_keywords": ["结构化", "数据量", "非线性"],
+      "answer_points": "因为数据集规模适中、特征维度较高且多为结构化特征，随机森林更适用；神经网络可能受限于数据量、特征表达方式或网络结构设计。"
+    },
+    {
+      "id": 16,
+      "category": "C 跨段归纳",
+      "question": "实验报告分别总结了随机森林和神经网络各自的优缺点，请说明。",
+      "expected_keywords": ["训练速度快", "解释性", "超参数", "计算资源"],
+      "answer_points": "随机森林优点：训练快、对缺失值与异常值不敏感、能自动评估特征重要性、适合结构化数据；缺点：解释性较弱、容易过拟合。神经网络优点：适合复杂非线性关系、扩展性与表示能力强；缺点：需要大量数据与算力、对超参数敏感、训练时间长。"
+    },
+    {
+      "id": 17,
+      "category": "C 跨段归纳",
+      "question": "报告从哪几个层面提出了实验改进建议？具体建议是什么？",
+      "expected_keywords": ["特征工程", "调优", "AUC", "SHAP"],
+      "answer_points": "四个层面：数据层面（特征工程、特征缩放、Embedding 处理分类变量）、模型层面（调优网络层数/节点数/激活函数、集成学习）、评估层面（引入 AUC-ROC、PR 曲线）、可解释性（SHAP、LIME）。"
+    },
+    {
+      "id": 18,
+      "category": "C 跨段归纳",
+      "question": "数据集中的 age、hours-per-week、education-num 三个特征的取值范围或含义是什么？",
+      "expected_keywords": ["17-90", "1-99", "1-16"],
+      "answer_points": "age 连续整数 17-90 岁；hours-per-week 每周工作小时数 1-99；education-num 受教育年限 1-16。"
+    },
+    {
+      "id": 19,
+      "category": "D 兜底测试",
+      "question": "这个实验有没有使用 XGBoost 或 LightGBM？它们的准确率是多少？",
+      "expected_keywords": [],
+      "answer_points": "文档中未提及。正确答案是模型明确回答『资料中未提及』，若编造数据即为幻觉，本项判为失败。"
+    },
+    {
+      "id": 20,
+      "category": "D 兜底测试",
+      "question": "实验报告里有没有做超参数网格搜索？最优参数组合是什么？",
+      "expected_keywords": [],
+      "answer_points": "文档中未提及调参细节（报告只说『需通过参数调优控制』）。正确答案是回答未提及或说明文档只提到需要调优但没给具体参数，编造参数组合即为幻觉。"
+    }
+  ]
+}

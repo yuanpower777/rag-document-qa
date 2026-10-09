@@ -1,0 +1,161 @@
+[paragraphs=147 tables=2 sections=4]
+[inline_images=15]
+P0000 <Normal>
+P0001 <Normal>
+P0002 <Normal> 2025-2026学年第一学期
+P0003 <Normal> 期末考查课程试卷A卷
+P0004 <Normal>
+P0005 <Normal> 课程名称：      [110413701]机器学习
+P0006 <Normal>
+P0008 <Normal>
+P0010 <Normal>
+P0012 <Normal>
+P0014 <Normal>
+P0016 <Normal> 教务处 制
+P0017 <Normal> 二〇二五年
+P0018 <Normal>
+P0019 <Normal> 考核题目
+P0020 <Normal> 基于UCI Adult数据集的收入预测模型应用实验
+P0021 <Normal> 1.考核内容：
+P0022 <Normal> Adult数据集（也称“Census Income”数据集）包含了个人的教育、职业、人口统计学特征等信息。该数据集的每条数据包含15个特征，每个特征及其可选值为：
+P0023 <Normal> 1）age：年龄，连续整数，取值范围17-90岁。
+P0024 <Normal> 2）workclass：工作类别，分类变量，可选值“Private：私营企业雇员；Self-emp-not-inc：自雇未注册公司；Self-emp-inc：自雇已注册公司；Federal-gov：联邦政府雇员；Local-gov：地方政府雇员；State-gov：州政府雇员；Without-pay：无薪工作；Never-worked：从未工作”。
+P0025 <Normal> 3）fnlwgt：最终权重，连续整数，代表具有相同人口特征个体在总人口中的统计权重。
+P0026 <Normal> 4）education：教育程度，分类变量，可选值“Preschool：学前；1st-4th：1-4年级；5th-6th：5-6年级；7th-8th：7-8年级；9th：9年级；10th：10年级；11th：11年级；12th：12年级；HS-grad：高中毕业；Some-college：上过大学但未毕业；Assoc-acdm：文理协士；Assoc-voc：职业协士；Bachelors：学士；Masters：硕士；Prof-school：专业学校；Doctorate：博士”。
+P0027 <Normal> 5）education-num：受教育年限，连续整数，取值范围1-16，对应教育程度的数值表示。
+P0028 <Normal> 6）marital-status：婚姻状况，分类变量，可选值“Married-civ-spouse：已婚（公民配偶）；Married-AF-spouse：已婚（军属）；Married-spouse-absent：已婚但配偶不在；Widowed：丧偶；Divorced：离异；Separated：分居；Never-married：从未结婚”。
+P0029 <Normal> 7）occupation：职业，分类变量，可选值“Tech-support：技术支持；Craft-repair：工艺维修；Other-service：其他服务行业；Sales：销售；Exec-managerial：行政管理；Prof-specialty：专业特长；Handlers-cleaners：搬运清洁；Machine-op-inspct：机器操作与检查；Adm-clerical：行政文员；Farming-fishing：农渔；Transport-moving：交通运输；Priv-house-serv：私人家政；Protective-serv：保护性服务；Armed-Forces：军队”。
+P0030 <Normal> 8）relationship：家庭关系，分类变量，可选值“Wife：妻子；Husband：丈夫；Own-child：自己的孩子；Other-relative：其他亲属；Unmarried：未婚伴侣；Not-in-family：非家庭成员”。
+P0031 <Normal> 9）race：种族，分类变量，可选值“White：白人；Black：黑人；Asian-Pac-Islander：亚太裔；Amer-Indian-Eskimo：美国印第安/爱斯基摩人；Other：其他”。
+P0032 <Normal> 10）sex：性别，分类变量，可选值“Male：男性；Female：女性”。
+P0033 <Normal> 11）capital-gain：资本收益，连续整数，来自投资、出售资产等的收益。
+P0034 <Normal> 12）capital-loss：资本损失，连续整数，来自投资、出售资产等的损失。
+P0035 <Normal> 13）hours-per-week：每周工作小时数，连续整数，取值范围1-99小时。
+P0036 <Normal> 14）native-country：原籍国家，分类变量，可选值约40个国家，主要包含“United-States：美国；Mexico：墨西哥；Philippines：菲律宾；Germany：德国；Canada：加拿大；Puerto-Rico：波多黎各；El-Salvador：萨尔瓦多；India：印度；Cuba：古巴；England：英格兰；Jamaica：牙买加；South：南非；China：中国；Italy：意大利；Dominican-Republic：多米尼加共和国”等。
+P0037 <Normal> 15）income：年收入，二元分类变量，可选值“<=50K：年收入不超过5万美元；>50K：年收入超过5万美元”。
+P0038 <Normal> 考生应基于该数据集完成机器学习模型应用实验，具体要求如下：
+P0039 <Normal> （1）模型应能够根据个人的特征信息预测其年收入是否超过5万美元。分类标准为：income列，若为“>50K”则为高收入人群，若为“<=50K”则为非高收入人群。
+P0040 <Normal> （2）采用两种机器学习模型分别完成实验，其中一种采用传统机器学习模型（类别不限），另一种采用神经网络模型（结构不限）。
+P0041 <Normal> （3）实验应包括数据处理部分。数据集可从超星平台的课程资料中下载，压缩文件名为“adult.zip”。考生需自行处理数据中的缺失值和分类变量（例如，使用独热编码或标签编码）。数据集中80%作为训练数据，余下20%作为验证数据。
+P0042 <Normal> （4）实验应包括模型评估部分。实验应给出两种模型的基于验证数据预测结果的混淆矩阵，准确率和F1值。
+P0043 <Normal> （5）实验应提交要素齐全的纸质实验报告。实验报告不得抄袭或被他人抄袭，雷同卷都将会判为不及格。
+P0045 <Normal> 2.成果形式与规格要求：
+P0046 <Normal> （1）成果形式：实验报告、实验代码。
+P0047 <Normal> （2）成果数量：一份实验报告，一份实验代码文件。
+P0048 <Normal> （3）实物成果规格：指定格式的纸质实验报告，实验报告格式采用课上所用实验报告模板。
+P0049 <Normal> （4）电子文档规格：以ipynb为后缀名的源代码文件，该代码文件应能在jupyter notebook环境下运行，环境主要模块的版本为：python=3.12.8，scikit-learn=1.6.1，tensorflow=2.16.1。该文档应按数据处理、传统机器学习模型、神经网络模型分段，保留每段的运行输出结果供批阅。
+P0050 <Normal>
+P0051 <List Paragraph> 操作方法和实验步骤
+P0052 <Normal> (1)导入必要的库
+P0053 <Normal>
+P0054 <Normal>
+P0055 <Normal>
+P0056 <Normal> （2）数据加载
+P0057 <Normal>
+P0058 <Normal>
+P0059 <Normal>
+P0060 <Normal>
+P0061 <Normal>
+P0062 <Normal> 运行结果
+P0063 <Normal>
+P0064 <Normal> （3）数据预处理（使用独热编码处理数据中的缺失值和分类变量）
+P0065 <Normal>
+P0066 <Normal> 运行结果
+P0067 <Normal>
+P0068 <Normal> （4）划分数据集
+P0069 <Normal>
+P0070 <Normal>
+P0071 <Normal>
+P0072 <Normal> 运行结果
+P0073 <Normal>
+P0074 <Normal>
+P0075 <Normal>
+P0076 <Normal>
+P0077 <Normal> （5）两种模型基于验证数据预测结果的混淆矩阵，准确率和F1值。
+P0078 <Normal> 1.传统机器学习模型（采用森林模型）
+P0079 <Normal>
+P0080 <Normal> 运行结果（混淆矩阵，准确率和F1值）：
+P0081 <Normal>
+P0082 <Normal>
+P0083 <Normal>
+P0084 <Normal> 2.神经网络模型
+P0085 <Normal> 训练过程以及运行结果（混淆矩阵，准确率和F1值）：
+P0086 <Normal>
+P0087 <Normal>
+P0088 <Normal> （6）结果对比以及将数据可视化
+P0089 <Normal>
+P0090 <Normal> 运行结果：
+P0091 <Normal>
+P0092 <Normal>
+P0093 <Normal>
+P0094 <Normal> （7）特征重要性分析
+P0095 <Normal>
+P0096 <Normal>
+P0097 <Normal> 运行结果
+P0098 <Normal>
+P0099 <Normal>
+P0100 <List Paragraph> 实验结果与分析
+P0101 <Normal> 本实验基于UCI Adult数据集，采用随机森林（传统机器学习模型）与全连接神经网络两种模型，对个人年收入是否超过5万美元进行了二分类预测。实验过程包括数据加载、预处理、模型构建、训练与评估，并进行了模型对比与特征重要性分析。
+P0102 <Normal> 1. 模型性能对比
+P0103 <Normal> 从评估结果来看，随机森林模型在准确率与F1分数上均优于神经网络模型，表现出更好的分类性能。具体分析如下：
+P0104 <Normal> 随机森林：在验证集上准确率达85.43%，F1分数为65.46%，表明模型在正负类样本上具有较好的平衡识别能力。
+P0105 <Normal> 神经网络：准确率为83.41%，F1分数为59.31%，虽也具备一定的预测能力，但在少数类（收入>50K）的识别上表现较弱，导致F1分数相对较低。
+P0106 <Normal> 2. 混淆矩阵分析
+P0107 <Normal> 随机森林混淆矩阵：
+P0108 <Normal> 真正例（TP）：1145
+P0109 <Normal> 假正例（FP）：320
+P0110 <Normal> 真反例（TN）：5927
+P0111 <Normal> 假反例（FN）：551
+P0112 <Normal> 神经网络混淆矩阵：
+P0113 <Normal> 真正例（TP）：959
+P0114 <Normal> 假正例（FP）：386
+P0115 <Normal> 真反例（TN）：5861
+P0116 <Normal> 假反例（FN）：737
+P0117 <Normal> 随机森林在识别高收入人群（>50K）时漏报率较低（FN较少），同时误报率（FP）也控制在合理范围。神经网络在正例识别上表现较弱，漏报较多，可能是模型结构或训练策略有待优化。
+P0118 <Normal> 3. 特征重要性分析
+P0119 <Normal> 通过对随机森林模型进行特征重要性分析，发现对收入预测影响最大的特征依次为：
+P0120 <Normal> capital-gain（资本收益）
+P0121 <Normal> education-num（受教育年限）
+P0122 <Normal> age（年龄）
+P0123 <Normal> hours-per-week（每周工作小时数）
+P0124 <Normal> capital-loss（资本损失）
+P0125 <Normal> 这些特征与个人经济状况、教育背景和工作投入密切相关，符合实际情况。尤其是capital-gain和education-num对收入水平的区分能力最强，说明资本积累与教育程度是影响收入的关键因素。
+P0126 <Normal> 4. 模型优劣与适用性讨论
+P0127 <Normal> 随机森林：
+P0128 <Normal> 优点：训练速度快，对缺失值与异常值不敏感，能自动评估特征重要性，适用于结构化数据分类。
+P0129 <Normal> 缺点：模型解释性较弱，容易过拟合（需通过参数调优控制）。
+P0130 <Normal> 神经网络：
+P0131 <Normal> 优点：适用于复杂非线性关系建模，具备良好的扩展性与表示能力。
+P0132 <Normal> 缺点：需要大量数据与计算资源，对超参数敏感，训练时间较长。
+P0133 <Normal> 在本任务中，由于数据集规模适中、特征维度较高且多为结构化特征，随机森林表现出更好的综合性能。神经网络虽具有一定潜力，但可能受限于数据量、特征表达方式或网络结构设计。
+P0134 <Normal> 5. 实验改进建议
+P0135 <Normal> 数据层面：可进一步进行特征工程，如构造交叉特征、进行特征缩放或使用Embedding处理分类变量。
+P0136 <Normal> 模型层面：神经网络的层数、节点数、激活函数等可进一步调优；也可尝试集成学习方法提升性能。
+P0137 <Normal> 评估层面：除准确率与F1外，可引入AUC-ROC、PR曲线等指标，更全面评估模型表现。
+P0138 <Normal> 可解释性：可结合SHAP、LIME等工具增强模型解释性，辅助业务理解。
+P0139 <Normal> 6. 总结
+P0140 <Normal> 本实验成功实现了基于UCI Adult数据集的收入预测任务，构建并比较了随机森林与神经网络两种模型。实验结果表明，随机森林在该任务上表现更优，具备较高的实用价值。通过特征重要性分析，进一步验证了资本收益、教育程度与年龄等因素对收入预测的关键作用。实验过程完整，代码可复现，为类似分类任务提供了参考范例。
+P0141 <Normal>
+P0142 <Normal>
+P0143 <Normal>
+P0144 <Normal>
+P0145 <Normal> 评分表
+P0146 <Normal>
+
+===== TABLE 0 rows=3 cols=3 =====
+  R0: 模型 | 准确率（Accuracy） | F1分数（F1-Score）
+  R1: 随机森林 | 0.8543 | 0.6546
+  R2: 神经网络 | 0.8341 | 0.5931
+
+===== TABLE 1 rows=12 cols=5 =====
+  R0: 考查方式 | 案例分析 论文 课程设计 实验报告 其他 | 案例分析 论文 课程设计 实验报告 其他 | 案例分析 论文 课程设计 实验报告 其他 | 案例分析 论文 课程设计 实验报告 其他
+  R2: 评分项目 | 评分项目 | 分值 | 评分细则 | 得分
+  R3: 一、实验代码 | 一、实验代码 | 80 |  | 
+  R4: 1.能完成数据处理功能 | 1.能完成数据处理功能 | 20 | 能加载数据集10 / 能从数据集生成训练样本集与验证样本集10 | 
+  R5: 2.能完成传统机器学习模型的构建、训练与评估 | 2.能完成传统机器学习模型的构建、训练与评估 | 30 | 能加载合适的扩展库5 / 能构建传统机器学习模型10 / 能使用训练集对模型进行训练10 / 能使用验证集对模型进行评价并生成指定的评价指标5 | 
+  R6: 3.能完成神经网络机器学习模型的构建、训练与评估 | 3.能完成神经网络机器学习模型的构建、训练与评估 | 30 | 能加载合适的扩展库5 / 能构建合理的神经网络模型10 / 能使用训练集对模型进行训练10 / 能使用验证集对模型进行评价并生成指定的评价指标5 | 
+  R7: 二、实验报告 | 二、实验报告 | 20 |  | 
+  R8: 1.操作方法和实验步骤部分 | 1.操作方法和实验步骤部分 | 5 | 实验代码记录完整、实验结果记录完整5 | 
+  R9: 2.实验数据记录、处理和分析 | 2.实验数据记录、处理和分析 | 10 | 对实验结果进行了合理的分析10 | 
+  R10: 3.格式和版面 | 3.格式和版面 | 5 | 字体等格式符合要求，版面整洁5 | 
+  R11: 总分 | 总分 | 100 |  | 
